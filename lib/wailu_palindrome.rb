@@ -7,10 +7,17 @@ class String
     processed_content == processed_content.reverse
   end
 
+  def letters
+    self.split("").reject do |letter|
+      letter.match(/[a-zA-Z]/).nil?
+    end
+      .join("")
+  end
+
   private
 
-    # Returns content for palindrome testing.
-    def processed_content
-      self.downcase
-    end
+  # Returns content for palindrome testing.
+  def processed_content
+    letters.downcase
+  end
 end
