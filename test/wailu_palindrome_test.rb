@@ -18,11 +18,7 @@ class WailuPalindromeTest < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
 
-  def test_letters
-    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
-  end
-
-  def test_palindrome_checking_does_not_affect_string
+  def test_palindrome_checking_does_not_affect_value
     value = "Madam, I'm Adam."
     default = value
     value.palindrome?
