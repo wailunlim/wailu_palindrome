@@ -1,8 +1,6 @@
-# WailuPalindrome
+# Palindrome detector
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wailu_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+`wailu_palindrome` is a sample Ruby gem created in [*Learn Enough Ruby to Be Dangerous*](https://www.learnenough.com/ruby-tutorial) by Michael Hartl.
 
 ## Installation
 
@@ -22,7 +20,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`wailu_palindrome` adds a `palindrome?` method to the `String` class, and can be used as follows:
+
+```
+$ irb
+>> require 'wailu_palindrome'
+>> "honey badger".palindrome?
+=> false
+>> "deified".palindrome?
+=> true
+>> "Able was I, ere I saw Elba.".palindrome?
+=> true
+>> phrase = "Madam, I'm Adam."
+>> phrase.palindrome?
+=> true
+```
 
 ## Development
 
@@ -32,4 +44,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/wailu_palindrome.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wailunlim/wailu_palindrome.
